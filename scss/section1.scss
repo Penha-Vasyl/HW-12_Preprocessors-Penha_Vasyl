@@ -1,0 +1,54 @@
+@import 'variables.scss';
+
+.section1 {
+  background-image: url('../img/designer_1.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+
+  height: 100vh;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .section1-info {
+    width: 60%;
+
+    .section1-text {
+      font-size: 18px;
+      line-height: 30px;
+      color: #505F98;
+    }    
+  }
+
+  .buttons-wrapper {
+    margin-top: 40px;
+  }
+
+  .button-learn-more {
+    margin-left: 20px;
+  }
+
+  @media (max-width: $breakpoint-large) {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), url('../img/designer_1.png');
+
+    .section1-info {
+      width: 80%; 
+    }
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    justify-content: center;
+
+    .section1-info {
+      margin-top: 150px;  
+      width: 100%; 
+    }
+
+    .button-learn-more {
+      margin: 10px 0;
+    }
+  }
+}

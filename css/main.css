@@ -1,0 +1,296 @@
+body {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 66px;
+  font-weight: 500;
+  color: #091133;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #091133;
+}
+@media (max-width: 800px) {
+  h2 {
+    padding: 30px 0 10px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6F7CB2;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+}
+
+.full-width-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-block {
+  height: 100vh;
+}
+@media (max-width: 800px) {
+  .section-block {
+    height: auto;
+  }
+}
+
+.primary-button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 40px;
+  border-radius: 2px;
+  border: none;
+  box-sizing: border-box;
+  border: 2px solid #111B47;
+  transition: all 150ms linear;
+  background-color: #111B47;
+  color: white;
+}
+.primary-button:hover {
+  background-color: #253a99;
+  border-color: #253a99;
+}
+
+.secondary-button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 40px;
+  border-radius: 2px;
+  border: none;
+  box-sizing: border-box;
+  border: 2px solid #111B47;
+  transition: all 150ms linear;
+  background-color: transparent;
+  color: #111B47;
+}
+.secondary-button:hover {
+  background-color: #cbd2f2;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 26px;
+  color: #37447E;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.button-small {
+  font-size: 12px;
+  padding: 2px 40px;
+}
+
+.menu {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 0;
+  color: #505F98;
+}
+.menu li {
+  list-style: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.menu li:hover {
+  color: black;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+@media (max-width: 800px) {
+  header .container {
+    flex-direction: column;
+  }
+  header .menu {
+    order: 2;
+  }
+  header .logo {
+    order: 1;
+    margin-bottom: 10px;
+  }
+  header .button-small {
+    order: 3;
+    margin: 10px 0;
+  }
+}
+
+.section1 {
+  background-image: url("../img/designer_1.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  height: 100vh;
+}
+.section1 .container {
+  display: flex;
+  align-items: center;
+}
+.section1 .section1-info {
+  width: 60%;
+}
+.section1 .section1-info .section1-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #505F98;
+}
+.section1 .buttons-wrapper {
+  margin-top: 40px;
+}
+.section1 .button-learn-more {
+  margin-left: 20px;
+}
+@media (max-width: 1000px) {
+  .section1 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)), url("../img/designer_1.png");
+  }
+  .section1 .section1-info {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .section1 {
+    justify-content: center;
+  }
+  .section1 .section1-info {
+    margin-top: 150px;
+    width: 100%;
+  }
+  .section1 .button-learn-more {
+    margin: 10px 0;
+  }
+}
+
+.section2-icon {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.small-text {
+  font-size: 12px;
+  line-height: 18px;
+  color: #5D6970;
+}
+
+.section6 {
+  background-image: url(../img/section6_photo.png);
+}
+.section6 .section6-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section6 .section6-container .section6-text {
+  width: 58%;
+  text-align: center;
+}
+.section6 .section6-container .price {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 66px;
+  color: #222F65;
+  margin-top: 20px;
+}
+.section6 .section6-container .section6-small-text {
+  margin-top: 40px;
+}
+
+.footer {
+  background: #E7ECFF;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.footer .footer-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .copyright {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #939EA4;
+  margin-bottom: 1;
+}
+.footer .footer-menu {
+  color: #929ECC;
+}
+.footer .networks {
+  display: flex;
+  gap: 20px;
+}
+.footer .networks img:hover {
+  opacity: 0.5;
+}
+@media (max-width: 800px) {
+  .footer .container {
+    padding: 20px 0;
+  }
+  .footer .footer-line {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

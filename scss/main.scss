@@ -1,0 +1,155 @@
+@import "variables.scss";
+
+body {
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 66px;
+  font-weight: 500;
+  color: #091133;
+
+  @media (max-width: $breakpoint-medium) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #091133;
+  @media (max-width: $breakpoint-medium) {
+    padding: 30px 0 10px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #091133;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6F7CB2; 
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+.container {
+  width: 70%;
+
+  @media (max-width: $breakpoint-large) {
+    width: 90%;
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+}
+
+.full-width-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-block {
+  height: 100vh;
+  @media (max-width: $breakpoint-medium) {
+    height: auto;
+  }
+}
+
+@mixin button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 40px;
+  border-radius: 2px;
+  border: none;
+  box-sizing: border-box;
+  border: 2px solid $dark-blue;
+  transition: all 150ms linear;
+}
+
+.primary-button {
+  @include button;
+
+  background-color: $dark-blue;
+  color: white;
+
+  &:hover {
+    background-color: lighten($dark-blue, 20%);
+    border-color: lighten($dark-blue, 20%);
+  }
+}
+
+.secondary-button {
+  @include button;
+
+  background-color: transparent;
+  color: $dark-blue;
+
+  &:hover {
+    background-color: lighten($dark-blue, 70%);
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 26px;
+  color: $primary-color;
+  user-select: none;
+}
+
+
+.button-small {
+  font-size: 12px;
+  padding: 2px 40px;
+}
+
+.menu {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 0;
+  color: $blue;
+  
+
+  li {
+   list-style: none;
+   margin-right: 30px;
+   cursor: pointer;
+
+   &:hover {
+     color: black;
+   } 
+  }
+}
+
+@import "header.scss";
+@import "section1.scss";
+@import "section2.scss";
+@import "section6.scss";
+@import "footer.scss";

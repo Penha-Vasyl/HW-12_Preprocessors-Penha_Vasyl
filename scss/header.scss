@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  @media (max-width: $breakpoint-medium) {
+    .container {
+      flex-direction: column;
+    }
+    .menu {
+      order: 2;
+    }
+    .logo {
+      order: 1;
+      margin-bottom: 10px;
+    }
+    .button-small {
+      order: 3;
+      margin: 10px 0;
+    }
+  }
+}
+
